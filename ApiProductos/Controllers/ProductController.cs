@@ -43,7 +43,7 @@ namespace ApiProductos.Controllers
 
         [HttpDelete, Route("SPDeleteProduct")]
         public async Task<PetitionResponse> SPDeleteProduct(int id) =>
-            await _iProduct.SPUDeleteProduct(id);
+            await _iProduct.SPDeleteProduct(id);
 
 
     }
