@@ -25,6 +25,8 @@ Para correr cada SP, es necesario:
 3.Copiar y pegar el EXEC de cada sp
 4.Ejecutarlo
 
+Create a product
+
     -- =============================================
     -- Author:		<Daniel Mora>
     -- Create date: <01/11/2024>
@@ -55,6 +57,8 @@ Para correr cada SP, es necesario:
 
     EXEC [dbo].[SPAddProduct] 'LLanta', 'Una descripción', 200000, 2;
 
+
+Update a product
 
     -- =============================================
     -- Author:		<Daniel Mora>
@@ -91,6 +95,8 @@ Para correr cada SP, es necesario:
 
     EXEC [dbo].[SPUpdateProduct] 1,'LLanta', 'Una descripción 2', 200000, 3;
 
+Get products
+
     -- =============================================
     -- Author:		<Daniel Mora>
     -- Create date: <01/11/2024>
@@ -104,8 +110,10 @@ Para correr cada SP, es necesario:
     END
     
 -- Ejecutar SP
-    EXEC [dbo].[SPGetProducts];
     
+    EXEC [dbo].[SPGetProducts];
+
+Delete a product
     
     -- =============================================
     -- Author:		<Daniel Mora>
